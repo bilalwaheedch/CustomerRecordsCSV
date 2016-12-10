@@ -93,9 +93,8 @@ public class CustomerMain {
                 Customer cFormData = new Customer(cID, fNameTF.getText(), lNameTF.getText(), Integer.parseInt(phoneTF.getText()));
 
                 customers.add(cFormData);
-                Files.write(out, customers, Charset.defaultCharset());
-
-                //System.out.println(customers.get(cID).getfName()+ " "+customers.get(cID).getlName());
+                CSVUtil.CSVWriteFile(out, customers);
+                System.out.println(customers.get(cID).getfName()+ " "+customers.get(cID).getlName());
             }
         });
 

@@ -1,12 +1,11 @@
 package Default;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by Bilal on 09-12-2016.
  */
-public class Customer {
+public class Customer{
+
     private int custID;
     private String fName;
     private String lName;
